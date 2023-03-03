@@ -1,0 +1,50 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	height:100vh;
+}
+
+.home-container{
+	display:grid;
+	min-height: 100vh;
+	height: 100%;
+	grid-template: auto / 30% 1fr;
+}
+
+.home-container .nav{
+	height: 60px;
+	padding: 10px 50px;
+	display: grid;
+	align-items: center;
+}
+
+.home-container .nav .logo{
+	color: #fff;
+	font-weight:600;
+	font-size: 20px;
+	letter-spacing: .7px;
+}
+
+.home-container .nav .nav-list{
+	list-style: none;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-template-columns: repeat(4,1fr);
+}
+
+.home-container .nav .nav-list .nav-item{
+	display: inline-block;
+	text-align: center;
+} 
+
+.home-container .nav .nav-list .nav-item .nav-link{
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration:none;
+	color: #fff;
+	position: relative;
+	letter-spacing: .7px;
+}
+
+/* 3:50 */
+
