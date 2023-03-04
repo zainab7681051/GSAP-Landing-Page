@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Railway:ital,wght@0,400;0,700;0,800;1,300&display=swap')
+
+*,
+::before,
+::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+}
+
 body{
 	font-family: 'Raleway', sans-serif;
 	height:100vh;
@@ -45,6 +56,133 @@ body{
 	position: relative;
 	letter-spacing: .7px;
 }
+.home-container .nav .nav-list .nav-item .nav-link::before{
+	content: '';
+	position: absolute;
+	color:#fff;
+	height: 2px;
+	width: 0%;
+	bottom: -10%;
+	transition: all .3s ease;
+	left:50%;
+	transform:translateX(-50%);
+}
 
-/* 3:50 */
+.home-container .nav .nav-list .nav-item:hover .nav-link::before{
+	width: 100%;
+}
 
+.home-container .aside{
+	height: 100%;
+	width: 100%;
+	background: rgb(19,35, 60);
+	position: relative;
+}
+
+.home-container .content{
+	position: absolute;
+	top:60%;
+	color: #fff;
+	left: 30%;
+	padding-left: 30px;
+	height: 342px;
+	width: 605px;
+	transform: translate(-50%, -50%);
+}
+
+.home-container .content::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top:0;
+	height: 100%;
+	width: 4px;
+	background: #fff;
+	border-radius: 20px;
+}
+
+.home-container .content h6{
+	font-size: 70px;
+	line-height: 70px;
+	height: 70px;
+	text-transform: uppercase;
+	font-weight: 800;
+	overflow: hidden;
+	position: relative;
+}
+
+.home-container .content h6 span{
+	position: absolute;
+}
+
+.home-container .content h5{
+	font-size: 100px;
+	line-height: 100px;
+	height: 100px;
+	font-weight: 800;
+	text-transform: uppercase;
+	overflow: hidden;
+	margin-bottom: 30px;
+	-webkit-text-stroke: 2px #fff;
+	color: transparent;
+	position: relative;
+}
+
+.home-container .content h5 span{
+	position: absolute;
+}
+
+.home-container .content p{
+	font-style: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	height: 24px;
+	overflow: hidden;
+	font-style: italic;
+	position: relative;
+}
+
+.home-container .content p span{
+	position: absolute;
+}
+
+.home-container .content button{
+	height: 50px;
+	width: 150px;
+	border: none;
+	background: dodgerblue;
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 24px;
+	margin-top: 20px;
+	letter-spacing: .7px;
+	border-radius: 5px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.home-container .hero{
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.home-container .hero .nav{
+	position: fixed;
+	width: calc(100vw - 35%)
+}
+
+.home-container .hero .place-img{
+	height: 100vh;
+	width: calc(100vw - 35%);
+	position: relative;
+	z-index: -1;
+	clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0)
+}
+
+.home-container .hero .place-img img{
+	object-fit: cover;
+	height: inherit;
+	width: inherit;
+}
