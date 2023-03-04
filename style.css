@@ -32,6 +32,7 @@ body {
     font-weight: 600;
     font-size: 20px;
     letter-spacing: .7px;
+    cursor: pointer;
 }
 
 .home-container .nav .nav-list {
@@ -189,3 +190,4 @@ body {
     height: inherit;
     width: inherit;
 }
+
